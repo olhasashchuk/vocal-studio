@@ -27,7 +27,7 @@ export function Hero({
 
   return (
     <section
-      className={`bg-background-dark text-foreground relative flex min-h-[100svh] items-end overflow-hidden px-6 pt-24 pb-24 md:min-h-screen md:items-center md:px-16 md:py-24 lg:px-24 ${className}`}
+      className={`bg-background-dark text-foreground relative flex min-h-svh items-end overflow-hidden px-6 pt-24 pb-24 md:min-h-screen md:items-center md:px-16 md:py-24 lg:px-24 ${className}`}
     >
       {desktopImage && (
         <div
@@ -55,7 +55,7 @@ export function Hero({
 
       <div
         aria-hidden="true"
-        className="from-background-dark/5 via-background-dark/45 to-background-dark/95 md:from-background-dark md:via-background-dark/70 md:to-background-dark/10 absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r"
+        className="from-background-dark/5 via-background-dark/45 to-background-dark/95 md:from-background-dark md:via-background-dark/70 md:to-background-dark/10 absolute inset-0 bg-linear-to-b md:bg-linear-to-r"
       />
 
       <div
@@ -63,7 +63,7 @@ export function Hero({
         className="bg-background-dark/10 md:bg-background-dark/15 absolute inset-0"
       />
 
-      <div className="relative z-10 max-w-[620px] md:max-w-4xl">
+      <div className="relative z-10 max-w-155 md:max-w-4xl">
         {eyebrow && (
           <p className="text-primary mb-4 font-sans text-[12px] leading-[1.3] font-semibold tracking-[0.12em] uppercase md:mb-5 md:text-[14px]">
             {eyebrow}
@@ -78,7 +78,7 @@ export function Hero({
           ))}
         </h1>
 
-        <p className="text-text-inverse-muted mt-6 max-w-[560px] font-sans text-[16px] leading-[1.55] font-normal md:mt-8 md:text-[21px] md:leading-[1.65]">
+        <p className="text-text-inverse-muted mt-6 max-w-140 font-sans text-[16px] leading-[1.55] font-normal md:mt-8 md:text-[21px] md:leading-[1.65]">
           {description}
         </p>
 
